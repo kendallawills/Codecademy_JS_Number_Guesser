@@ -12,3 +12,13 @@ console.log(generateTarget());
 
 /* STEP 2 */
 
+const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
+    const humanDifference = Math.abs(targetGuess - humanGuess);
+    const computerDifference = Math.abs(targetGuess - computerGuess);
+    if (humanDifference <= computerDifference) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
