@@ -2,7 +2,7 @@ let humanScore = 0;
 let computerScore = 0;
 let currentRoundNumber = 1;
 
-/* STEP 1 */
+// STEP 1
 
 const generateTarget = () => {
     return Math.floor(Math.random() * 10);
@@ -10,7 +10,7 @@ const generateTarget = () => {
 
 console.log(generateTarget());
 
-/* STEP 2 */
+// STEP 2
 
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
     const humanDifference = Math.abs(targetGuess - humanGuess);
@@ -22,3 +22,12 @@ const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
     }
 }
 
+// STEP 3
+
+const updateScore = winner => {
+    if (winner === 'human') {
+        humanScore++;
+    } else if (winner === 'computer') {
+        computerScore++;
+    }
+}
