@@ -31,3 +31,7 @@ const updateScore = winner => {
         computerScore++;
     }
 }
+
+// STEP 4
+
+const advanceRound = () => currentRoundNumber++;
